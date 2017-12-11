@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystmOneProtocol>
+    <!--Exported on 30 Nov 2017 11:47-->
+    <!--Exported by EVANS, Griff-->
+    <TemplateDefinition Female="y" Male="y" Type="16">
+        <Protocol ManualTrigger="y">
+            <AutomaticTrigger>
+                <Trigger>None</Trigger>
+                <TriggerEveryOccurrence>false</TriggerEveryOccurrence>
+                <PromptToLaunchIfMultipleApply>true</PromptToLaunchIfMultipleApply>
+            </AutomaticTrigger>
+            <Node Uid="0" X="36" Y="24">Start</Node>
+            <Node ActionUid="SUBACTION~ConDetails~Template~1477"
+                Blocking="n" Uid="2" X="108" Y="120">Action</Node>
+            <Node Uid="4" X="156" Y="252">Question<Q>
+                    <p>
+                        <p>
+                            <t>Is your Asthma affecting your sleep?</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Asthma not disturbing sleep</Answer>
+                <Answer>Asthma disturbs sleep weekly</Answer>
+                <Answer>Asthma disturbs sleep frequently</Answer>
+            </Node>
+            <Node Uid="5" X="36" Y="204">AddNote<Note>Asthma Review Information gathered for Doctor to review and Read Code as appropriate</Note>
+                <Note/>
+            </Node>
+            <Node Uid="7" X="504" Y="336">AddNote<Note>Patient states Asthma disturbs sleep frequently</Note>
+            </Node>
+            <Node Uid="9" X="336" Y="348">AddNote<Note>Patient states Asthma disturbs sleep weekly</Note>
+            </Node>
+            <Node Uid="10" X="156" Y="336">AddNote<Note>Patient states Asthma does not disturb sleep</Note>
+            </Node>
+            <Node Uid="12" X="108" Y="468">Question<Q>
+                    <p>
+                        <p>
+                            <t>Is your Asthma affecting the daytime?</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Never causes daytime symptoms</Answer>
+                <Answer>Causes daytime symptoms 1 to 2 times per week</Answer>
+                <Answer>Causes daytime symptoms 1 to 2 times per month</Answer>
+            </Node>
+            <Node Uid="14" X="348" Y="552">AddNote<Note>Patient states Asthma causes daytime symptoms 1 to 2 times per week</Note>
+            </Node>
+            <Node Uid="16" X="567" Y="553">AddNote<Note>Patient states Asthma causes daytime symptoms 1 to 2 times per month</Note>
+            </Node>
+            <Node Uid="17" X="184" Y="558">AddNote<Note>Patient states Asthma NEVER causes daytime symptoms</Note>
+            </Node>
+            <Node Uid="19" X="204" Y="684">Question<Q>
+                    <p>
+                        <p>
+                            <t>Is your Asthma affecting activities?</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Not limiting activities</Answer>
+                <Answer>Limits activities 1 to 2 times per week</Answer>
+                <Answer>Limits activities 1 to 2 times per month</Answer>
+            </Node>
+            <Node Uid="21" X="240" Y="1188">Question<Q>
+                    <p>
+                        <p>
+                            <t>Book your appointment to stop smoking today –  or call the First for Wellbeing Stop Smoking team on 0300 126 5700</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Yes</Answer>
+                <Answer>No</Answer>
+            </Node>
+            <Node Report="152869" Uid="23" X="216" Y="888">InReport</Node>
+            <Node Uid="25" X="180" Y="768">AddNote<Note>Patient states Asthma is NOT limiting activities</Note>
+            </Node>
+            <Node Uid="27" X="372" Y="768">AddNote<Note>Patient states Asthma is limiting activities 1 to 2 times per week</Note>
+            </Node>
+            <Node Uid="29" X="552" Y="768">AddNote<Note>Patient states Asthma is limiting activities 1 to 2 times per month</Note>
+            </Node>
+            <Node ActionUid="SCRN_Appointment Ledger" Blocking="y"
+                Uid="31" X="72" Y="1380">Action</Node>
+            <Node Uid="33" X="96" Y="1224">AddNote<Note>Patient is a smoker and appointment has been offered with the First for Wellbeing Stop Smoking Team</Note>
+            </Node>
+            <Node ActionUid="qn" Blocking="n" Uid="35" X="72" Y="1752">Action</Node>
+            <Node Uid="37" X="180" Y="1632">Question<Q>
+                    <p>
+                        <p>
+                            <t>Do you have any questions for the Doctor?</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Yes</Answer>
+                <Answer>No</Answer>
+            </Node>
+            <Node Uid="39" X="60" Y="1632">AddNote<Note>Patient wishes to ask the Doctor the following questions - </Note>
+            </Node>
+            <Node Uid="43" X="276" Y="1260">AddNote<Note>Patient has declined an appointment with the First for Wellbeing Stop Smoking Team</Note>
+            </Node>
+            <Node Uid="45" X="204" Y="2076">Info<p>
+                    <p>
+                        <t>Thank you for answering the questions.  I will feedback the answers to the Doctor who will conduct the review.  If the Doctor thinks it is appropriate then they will contact you further, otherwise your Asthma Review is complete.</t>
+                    </p>
+                </p>
+            </Node>
+            <Node Uid="47" X="180" Y="960">Question<Q>
+                    <p>
+                        <p>
+                            <t>Smoking status</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Smoker</Answer>
+                <Answer>Ex Smoker</Answer>
+                <Answer>Never Smoked</Answer>
+            </Node>
+            <Node Code="137R." Uid="51" X="96" Y="1068">AddCode</Node>
+            <Node Code="XE0oh" Uid="52" X="360" Y="1068">AddCode</Node>
+            <Node Code="Ub1na" Uid="53" X="228" Y="1068">AddCode</Node>
+            <Node Uid="55" X="540" Y="132">Info<p>
+                    <p>
+                        <t>Asthma Review</t>
+                    </p>
+                    <p>
+                        <t>Information gathering for Doctor to review</t>
+                    </p>
+                </p>
+            </Node>
+            <Node
+                ActionUid="SUBACTION~DLG_New Task...~ApplyTemplateNoUserInput~120081"
+                Blocking="n" Uid="57" X="204" Y="2184">Action</Node>
+            <Node Uid="59" X="228" Y="1704">AddNote<Note>Patient does not have any questions for the Doctor</Note>
+            </Node>
+            <Node Uid="61" X="204" Y="1788">Question<Q>
+                    <p>
+                        <p>
+                            <t>Should the Doctor need to issue you with a prescription would you like this</t>
+                        </p>
+                    </p>
+                </Q>
+                <Answer>Sent Electronically</Answer>
+                <Answer>Collect from Reception</Answer>
+            </Node>
+            <Node Uid="62" X="444" Y="2004">AddNote<Note>Should a medication need prescribing the patient would like to collect a paper prescription from Reception</Note>
+            </Node>
+            <Node ActionUid="tel" Blocking="n" RGB="-13108" Uid="63"
+                X="204" Y="1992">Action</Node>
+            <Node Uid="65" X="64" Y="2020">AddNote<Note>Should a medication need prescribing the patient would like this sent electronically</Note>
+            </Node>
+            <Node Code="663O." Uid="66" X="24" Y="348">AddCode</Node>
+            <Node Code="663N1" Uid="67" X="240" Y="396">AddCode</Node>
+            <Node Code="663N2" Uid="68" X="648" Y="360">AddCode</Node>
+            <Node Code="XaINa" Uid="69" X="36" Y="588">AddCode</Node>
+            <Node Code="XaINc" Uid="70" X="432" Y="612">AddCode</Node>
+            <Node Code="XaINb" Uid="71" X="696" Y="612">AddCode</Node>
+            <Node Code="663Q." Uid="72" X="60" Y="828">AddCode</Node>
+            <Node Code="XaXZu" Uid="73" X="288" Y="828">AddCode</Node>
+            <Node Code="XaXZs" Uid="74" X="672" Y="852">AddCode</Node>
+            <Node Report="152548" Uid="76" X="132" Y="1872">InReport</Node>
+            <Node Uid="77" X="24" Y="1932">Info<p>
+                    <p>
+                        <t>Check pharmacy details</t>
+                    </p>
+                </p>
+            </Node>
+            <Node Uid="78" X="216" Y="1932">Info<p>
+                    <p>
+                        <t>Record pharmacy details</t>
+                    </p>
+                </p>
+            </Node>
+            <Link EndUid="2" StartIndex="0" StartUid="0"/>
+            <Link EndUid="4" StartIndex="0" StartUid="5"/>
+            <Link EndUid="7" StartIndex="2" StartUid="4"/>
+            <Link EndUid="9" StartIndex="1" StartUid="4"/>
+            <Link EndUid="10" StartIndex="0" StartUid="4"/>
+            <Link EndUid="68" StartIndex="0" StartUid="7"/>
+            <Link EndUid="67" StartIndex="0" StartUid="9"/>
+            <Link EndUid="66" StartIndex="0" StartUid="10"/>
+            <Link EndUid="17" StartIndex="0" StartUid="12"/>
+            <Link EndUid="14" StartIndex="1" StartUid="12"/>
+            <Link EndUid="16" StartIndex="2" StartUid="12"/>
+            <Link EndUid="69" StartIndex="0" StartUid="17"/>
+            <Link EndUid="71" StartIndex="0" StartUid="16"/>
+            <Link EndUid="70" StartIndex="0" StartUid="14"/>
+            <Link EndUid="25" StartIndex="0" StartUid="19"/>
+            <Link EndUid="27" StartIndex="1" StartUid="19"/>
+            <Link EndUid="29" StartIndex="2" StartUid="19"/>
+            <Link EndUid="72" StartIndex="0" StartUid="25"/>
+            <Link EndUid="73" StartIndex="0" StartUid="27"/>
+            <Link EndUid="74" StartIndex="0" StartUid="29"/>
+            <Link EndUid="33" StartIndex="0" StartUid="21"/>
+            <Link EndUid="31" StartIndex="0" StartUid="33"/>
+            <Link EndUid="39" StartIndex="0" StartUid="37"/>
+            <Link EndUid="35" StartIndex="0" StartUid="39"/>
+            <Link EndUid="43" StartIndex="1" StartUid="21"/>
+            <Link EndUid="47" StartIndex="1" StartUid="23"/>
+            <Link EndUid="37" StartIndex="0" StartUid="43"/>
+            <Link EndUid="59" StartIndex="1" StartUid="37"/>
+            <Link EndUid="61" StartIndex="0" StartUid="35"/>
+            <Link EndUid="51" StartIndex="0" StartUid="47"/>
+            <Link EndUid="53" StartIndex="1" StartUid="47"/>
+            <Link EndUid="52" StartIndex="2" StartUid="47"/>
+            <Link EndUid="21" StartIndex="0" StartUid="51"/>
+            <Link EndUid="37" StartIndex="0" StartUid="52"/>
+            <Link EndUid="37" StartIndex="0" StartUid="53"/>
+            <Link EndUid="37" StartIndex="0" StartUid="23"/>
+            <Link EndUid="55" StartIndex="0" StartUid="2"/>
+            <Link EndUid="5" StartIndex="0" StartUid="55"/>
+            <Link EndUid="57" StartIndex="0" StartUid="45"/>
+            <Link EndUid="61" StartIndex="0" StartUid="59"/>
+            <Link EndUid="76" StartIndex="0" StartUid="61"/>
+            <Link EndUid="62" StartIndex="1" StartUid="61"/>
+            <Link EndUid="45" StartIndex="0" StartUid="62"/>
+            <Link EndUid="65" StartIndex="0" StartUid="63"/>
+            <Link EndUid="45" StartIndex="0" StartUid="65"/>
+            <Link EndUid="12" StartIndex="0" StartUid="66"/>
+            <Link EndUid="12" StartIndex="0" StartUid="67"/>
+            <Link EndUid="12" StartIndex="0" StartUid="68"/>
+            <Link EndUid="19" StartIndex="0" StartUid="69"/>
+            <Link EndUid="19" StartIndex="0" StartUid="70"/>
+            <Link EndUid="19" StartIndex="0" StartUid="71"/>
+            <Link EndUid="23" StartIndex="0" StartUid="72"/>
+            <Link EndUid="23" StartIndex="0" StartUid="73"/>
+            <Link EndUid="23" StartIndex="0" StartUid="74"/>
+            <Link EndUid="37" StartIndex="0" StartUid="31"/>
+            <Link EndUid="77" StartIndex="0" StartUid="76"/>
+            <Link EndUid="78" StartIndex="1" StartUid="76"/>
+            <Link EndUid="63" StartIndex="0" StartUid="77"/>
+            <Link EndUid="63" StartIndex="0" StartUid="78"/>
+        </Protocol>
+        <Name>001 Asthma Review Information gathering</Name>
+        <Description/>
+        <Category>SIGNPOSTING</Category>
+        <Icon>FACTRespiratory</Icon>
+        <Source>71211</Source>
+        <SourceGroup>-1</SourceGroup>
+        <Position>-1j-36d1d-3k113s-21b3t19292n-t-3p-3a3h1o3g1735f-1o3u-31-1p3e2d-2s3m1d3a</Position>
+    </TemplateDefinition>
+</SystmOneProtocol>
